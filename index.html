@@ -18,7 +18,7 @@
 
   <body class="black">
     <!-- Navbar -->
-    <nav class="sidebar bar-block small center">
+    <nav class="sidebar bar-block small center hide-small">
       <img
         src="images/profile/Mini.png"
         style="width: 100%; background-color: black"
@@ -41,10 +41,38 @@
       </a>
     </nav>
 
+    <div class="top hide-large hide-medium" id="myNavbar">
+      <div class="bar black opacity hover-opacity-off center small">
+        <a href="#" class="bar-item button" style="width: 22% !important">
+          HOME
+        </a>
+        <a href="#about" class="bar-item button" style="width: 22% !important">
+          ABOUT
+        </a>
+        <a
+          href="#work-exp"
+          class="bar-item button"
+          style="width: 22% !important"
+        >
+          WORK EXP
+        </a>
+        <a
+          href="#contact"
+          class="bar-item button"
+          style="width: 22% !important"
+        >
+          CONTACT
+        </a>
+      </div>
+    </div>
+
     <div class="padding-large" id="main">
       <!-- HEADER SECTION -->
       <header class="container padding-32 center black" id="home">
-        <h1 class="jumbo">I'm Wyn Christian Rebanal.</h1>
+        <h1 class="jumbo">
+          <span class="hide-small"> I'm </span>
+          Wyn Christian Rebanal.
+        </h1>
         <p>ML / Back-End / Game Developer</p>
         <img
           src="images/profile/Main.png"

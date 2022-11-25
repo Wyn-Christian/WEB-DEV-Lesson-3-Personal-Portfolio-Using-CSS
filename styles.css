@@ -17,7 +17,7 @@ small {
 }
 
 .padding-large {
-  padding: 12px 24px, imp !important;
+  padding: 12px 24px !important;
 }
 
 .bar-block .bar-item {
@@ -57,6 +57,7 @@ small {
 }
 
 #main {
+  transition: margin-left 0.4s;
   margin-left: 120px;
 }
 
@@ -164,4 +165,31 @@ small {
 .table td:first-child,
 .table th:first-child {
   padding-left: 16px;
+}
+
+.top {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .hide-small {
+    display: none;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .hide-medium {
+    display: none !important  ;
+  }
+}
+@media (min-width: 993px) {
+  .hide-large {
+    display: none !important;
+  }
 }
